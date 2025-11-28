@@ -1,6 +1,6 @@
 module github.com/zhashkevych/go-clean-architecture
 
-go 1.24.9
+go 1.24.4
 
 require (
 	github.com/dgrijalva/jwt-go/v4 v4.0.0-20190521221207-07e10bec2a34
