@@ -29,6 +29,9 @@ REST API с собственной системой аутентификации
 - UseCase layer
 - Delivery layer
 
+## Подключение к MongoDB из MongoDB for VS Code
+mongodb://localhost:27017
+
 ## API:
 
 ### POST /auth/sign-up
@@ -106,10 +109,14 @@ Deletes bookmark by ID:
 
 
 ## Requirements
-- go 1.13
+- go 1.24.4 (drk изменения 2025.11)
 - docker & docker-compose
 
 ## Run Project
 
 Use ```make run``` to build and run docker containers with application itself and mongodb instance
 
+## drk 
+Изменил docker-compose.yml (ноябрь 2025г.)
+- Удалл монтирование локальной папки и добавил именованный том:
+- Удалил устаревший ключ --smallfiles

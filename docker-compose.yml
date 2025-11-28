@@ -20,8 +20,14 @@ services:
       - MONGO_LOG_DIR=/dev/null
       - MONGODB_DATABASE=testdb
     volumes:
-      - ./.data/db:/data/db
+      # - ./.data/db:/data/db # (drk изменения 2025.11)
+      - mongo_data:/data/db # <-- Добавил (drk изменения 2025.11)
     ports:
       - 27017:27017
     command: mongod --logpath=/dev/null # --quiet
-    # command: mongod --smallfiles --logpath=/dev/null # --quiet
+    # command: mongod --smallfiles --logpath=/dev/null # --quiet # (drk изменения 2025.11)
+
+    # Добавил секцию в самый конец файла docker-compose.yml (drk изменения 2025.11)
+volumes:
+  mongo_data:
+    driver: local
