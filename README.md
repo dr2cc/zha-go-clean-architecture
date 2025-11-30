@@ -118,5 +118,5 @@ Use ```make run``` to build and run docker containers with application itself an
 
 ## drk 
 Изменил docker-compose.yml (ноябрь 2025г.)
-- Удалл монтирование локальной папки и добавил именованный том:
+- Удалил монтирование локальной папки и добавил именованный том:
 - Удалил устаревший ключ --smallfiles
