@@ -116,6 +116,15 @@ Deletes bookmark by ID:
 
 Use ```make run``` to build and run docker containers with application itself and mongodb instance
 
+## (drk) Stop the project and destroy the containers. Также необходимо для очистки кэша docker-compose и сборки проекта с новой сигнатурой
+
+`docker-compose down`
+
+## (drk) Rebuild the project
+
+`make build`
+`make run`
+
 ## drk 
 Изменил docker-compose.yml (ноябрь 2025г.)
 - Удалил монтирование локальной папки и добавил именованный том:
